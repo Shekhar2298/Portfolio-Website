@@ -9,7 +9,7 @@
   <link href="./style.css" rel="stylesheet">
 </head>
 
-<body class="bg-warning">
+<body style="background-color: darkolivegreen;">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
@@ -31,6 +31,36 @@
           <li class="nav-item">
             <a class="nav-link active " aria-current="page" href="#contacts">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#" onclick="document.getElementById('id04').style.display='block'">Cerificates</a>
+            <div id="id04" class="modal">
+              <span onclick="document.getElementById('id04').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+              
+            <div class="parent container-fluid modal-content animate">
+              <div class="child1 row">
+                    <a class="border border-primary column" href="./Resources/certificate/Bootstrap-Shekhar_ Codecademy.pdf" target="_blank" >Learn-Bootstrap</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Browser-compatibilityShekhar-_ Codecademy.pdf" >Browser-compatibility</a>
+                    <a class="border border-primary column" href="./Resources/certificate/code foundations _shekhar Codecademy.pdf" >code-foundations</a>
+                    </div>
+                    <div class="child2 row">
+                    <a class="border border-primary column" href="./Resources/certificate/CommandLine_Shekhar _ Codecademy.pdf" >CommandLine</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Deploy-website-shekhar_ Codecademy.pdf" >Deploy-website</a>
+                    <a class="border border-primary column" href="./Resources/certificate/GidCSS-cChandrashekhar-codecademy.pdf" >Gid&CSS</a>
+                    </div>
+                    <div class="child3 row">
+                    <a class="border border-primary column" href="./Resources/certificate/Git&Github_Shekhar _ Codecademy.pdf">Git&Github</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Learn HTML_Shekhar.Codecademy.pdf" >Learn-HTML</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Learn-CSS_ ShekhaCodecademy.pdf" >Learn-CSS</a>
+                    </div>
+                    <div class="child4 row">
+                    <a class="border border-primary column" href="./Resources/certificate/Learn-Javascript-Shekhar_ Codecademy.pdf" >Learn-Javascript</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Responsive-Design-Shekhar _ Codecademy.pdf" >Responsive-Design</a>
+                    <a class="border border-primary column" href="./Resources/certificate/Transition-css&animation _Shekhar. Codecademy.pdf" >Transition-css&animation</a>
+             </div>
+                  </div>
+                  <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+          </li>
         </ul>
     </form>
   </nav>
@@ -40,25 +70,25 @@
       <h1 class="text-success"> Software Developer</h1>
       <h2 class="text=warning" id="txt"> Hello, I'm Chandrashekhar Wadibhasme, focusing on creative frontend and backend
         Development</h2>
-      <button class="btn btn-dark justify-content-center"><a href="About-me.html#abtme" target="_blank">About
-          me</a></button>
+       
 
     </div>
-
+    <hr><hr>
     <img id="mainimg" src="Resources\My-Image1.jpg">
+ 
   </div>
 
-
-  <div class="container" style="margin-top: 50px;" id="topic">
+<div style="background-color: burlywood;">
+  <div class="container bg-warning" style="margin-top: 50px;" id="topic">
     <h2>Projects</h2>
     <h4>click for Github link:-</h4>
     <ol style="font-size: 20px; text-decoration: none">
-      <li><a href="https://github.com/Shekhar2298/Colmar-Academy-project" target="_blank">Colmar-Academy Project</a>
+      <li><a class="linksite" href="https://github.com/Shekhar2298/Colmar-Academy-project" target="_blank">Colmar-Academy Project</a>
       </li>
-      <li><a href="https://github.com/Shekhar2298/Dasmoto-Project" target="_blank">Dasmoto Project</a></li>
-      <li><a href="https://github.com/Shekhar2298/TeaCozy-Project" target="_blank">TeaCozy Project</a></li>
-      <li><a href="https://github.com/Shekhar2298/Tribute-Website-Project" target="_blank">Tribute Pages</a></li>
-      <li><a href="https://github.com/Shekhar2298/Fitness-Website" target="_blank">Fitness Website</a></li>
+      <li><a class="linksite" href="https://github.com/Shekhar2298/Dasmoto-Project" target="_blank">Dasmoto Project</a></li>
+      <li><a class="linksite" href="https://github.com/Shekhar2298/TeaCozy-Project" target="_blank">TeaCozy Project</a></li>
+      <li><a class="linksite" href="https://github.com/Shekhar2298/Tribute-Website-Project" target="_blank">Tribute Pages</a></li>
+      <li><a class="linksite" href="https://github.com/Shekhar2298/Fitness-Website" target="_blank">Fitness Website</a></li>
     </ol>
   </div>
 
@@ -114,10 +144,12 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+</div>
+<hr>
+<div style="background-color:darkgrey;" >
   <div class="container text-center" style="margin-top: 50px;position: relative; " id="skill">
     <h2>Skills</h2>
-    <div class="container justify-content-center" style="height: 50px;width: 50px; display: inline-flex;" id="skillimg">
+    <div class="container justify-content-center" style="height: 100px;width: 100px; display: inline-flex;border-radius: 20px;" id="skillimg">
 
 
       <img src="Resources\htmllogo.png">
@@ -126,21 +158,22 @@
       <img src="Resources\gitlogo.png">
       <img src="Resources\githublogo.png">
       <img src="Resources\nodelogo.png">
+      <img src="Resources/phplogo.png">
     </div>
 
   </div>
+</div>
+<hr>
 
-
-
-  <div class="container text-center " style="margin-top: 100px;" id="contacts">
+  <div class="container text-center " style="margin-top: 50px; background-color: darkseagreen; max-width: 100%;" id="contacts">
     <h2>
       Contact
     </h2>
-    <div class="container justify-content-center" id="contactimg">
-      <a href="https://www.linkedin.com/in/shekhar2298/" target="_blank"><img class="img1"
+    <div class="container-fluid justify-content-center" id="contactimg">
+      <a href="https://www.linkedin.com/in/shekhar2298/" target="_blank"><img class="img4"
           src="Resources\linkedinlogo.png"></a>
-      <a href="https://www.github.com/Shekhar2298" target="_blank"><img class="img1" src="Resources\githublogo.png"></a>
-      <a href="https://mail.google.com/mail/u/0/#inbox?compose=shekharw2298@gmail.com" target="_blank"><img src="Resources\Maillogo.png"></a>
+      <a href="https://www.github.com/Shekhar2298" target="_blank"><img class="img4" src="Resources\githublogo.png"></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=shekharw2298@gmail.com" target="_blank"><img class="img4" src="Resources\Maillogo.png"></a>
       
     </div>
     </div>

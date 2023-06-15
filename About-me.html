@@ -17,7 +17,7 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  background-image: linear-gradient(-60deg, #6c3 50%, rgb(111, 154, 183) 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -68,7 +68,31 @@ h1 {
     float: right;
 }
 #contactimg img{
-    height: 50px; width: 50px; display: inline-flex; padding-left: 4px;
+    height: 70px; width: 70px; display: inline-flex; padding-left: 4px;
+}
+.border {
+  border: 2px solid;
+
+  color: white;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+/* Green */
+.border-success {
+  border-color: #04AA6D;
+color: rgb(28, 80, 124);
+}
+
+.border-success:hover {
+  background-color: #04AA6D;
+  color: rgb(167, 64, 218);
 }
 
     </style>
@@ -87,7 +111,7 @@ h1 {
         <h1 class="text-center">About me</h1>
 
         <img id="mainimg" src="Resources\My-Image1.jpg">
-        <h3> Hii, I am Chandrashekhar Wadibhasme. I have completed my graduation from p.r.pote college of engineering,
+        <h3> Hii, I am Chandrashekhar Wadibhasme.I am from amravati, maharashtra. I have completed my graduation from p.r.pote college of engineering,
             Amravati with cgpa of 8.30.
             Currently, I am pursuing the jr. software developer program from generation.The program focuses on skills
             which requires to become a successful software
@@ -109,7 +133,7 @@ h1 {
     </div>
 
 
-    <a class="border border-lg-success rounded-pill container" href="./Resources/resume5.pdf">Download CV</a>
+    <a class="border border-success " href="./Resources/resume5.pdf">Download CV</a>
     
 
 
