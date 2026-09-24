@@ -34,6 +34,7 @@
   --tint-ai: #a78bfa;
   --tint-fullstack: #3ddc97;
   --tint-research: #fbbf24;
+  --tint-work: #fb7185;
 }
 
 [data-theme="light"] {
@@ -58,6 +59,7 @@
   --tint-ai: #6d28d9;
   --tint-fullstack: #047857;
   --tint-research: #b45309;
+  --tint-work: #be123c;
 }
 
 /* ---------- Base ---------- */
@@ -299,6 +301,8 @@ button { font: inherit; color: inherit; }
 .service:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--tint) 45%, var(--border)); }
 .service[data-tint="devops"] { --tint: var(--tint-devops); }
 .service[data-tint="ai"] { --tint: var(--tint-ai); }
+.service[data-tint="fullstack"] { --tint: var(--tint-fullstack); }
+.service[data-tint="java"] { --tint: var(--tint-research); }
 .service-icon { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; color: var(--tint); background: color-mix(in srgb, var(--tint) 13%, transparent); }
 .service h3 { margin-top: 18px; font-size: 1.2rem; }
 .service p { margin-top: 8px; font-size: 15px; color: var(--text-soft); }
@@ -364,6 +368,7 @@ button { font: inherit; color: inherit; }
 .project[data-cat="ai"] { --tint: var(--tint-ai); }
 .project[data-cat="fullstack"] { --tint: var(--tint-fullstack); }
 .project[data-cat="research"] { --tint: var(--tint-research); }
+.project[data-cat="work"] { --tint: var(--tint-work); }
 .project-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .project-icon { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; color: var(--tint); background: color-mix(in srgb, var(--tint) 13%, transparent); }
 .project-cat { font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--tint); }
@@ -382,10 +387,12 @@ button { font: inherit; color: inherit; }
 .project-links a { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--text); transition: color .2s; }
 .project-links a:hover { color: var(--tint); }
 .project-links .private { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--muted); }
+.project-links .project-org { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 500; color: var(--text-soft); }
+.project-links .project-org .icon { color: var(--tint); }
 
-/* "More on GitHub" card: fills the last row in the "All" view */
+/* "More on GitHub" card: fills the last row in the "All" view (14 projects: 1 free slot at 3 columns, a full row at 2) */
 .project-cta {
-  grid-column: span 2;
+  grid-column: span 1;
   display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px;
   padding: 28px 32px; border-radius: var(--radius-lg);
   border: 1px dashed var(--border-strong);
@@ -409,12 +416,14 @@ button { font: inherit; color: inherit; }
 .skills-legend { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 14px; color: var(--muted); }
 
 /* ---------- Certifications ---------- */
-.cert-featured { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.cert-featured { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .cert { display: flex; flex-direction: column; padding: 22px; border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--surface); transition: transform .25s var(--ease), border-color .25s; }
 .cert:hover { transform: translateY(-4px); border-color: var(--border-strong); }
 .cert-logo { width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; font-family: var(--font-display); font-size: 13px; font-weight: 700; color: #fff; letter-spacing: .02em; }
 .cert-logo.dl { background: linear-gradient(135deg, #f43f5e, #ec4899); }
 .cert-logo.ibm { background: #0f62fe; }
+.cert-logo.lb { background: linear-gradient(135deg, #f97316, #ea580c); }
+.cert-logo.gi { background: linear-gradient(135deg, #0d9488, #0f766e); }
 .cert h3 { margin-top: 16px; font-size: 1.02rem; line-height: 1.35; }
 .cert-issuer { margin-top: 6px; font-size: 14px; color: var(--text-soft); }
 .cert-id { margin-top: 10px; font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); word-break: break-all; }
@@ -479,6 +488,7 @@ button { font: inherit; color: inherit; }
 @media (max-width: 1080px) {
   .projects, .skills { grid-template-columns: repeat(2, 1fr); }
   .cert-featured { grid-template-columns: repeat(2, 1fr); }
+  .project-cta { grid-column: span 2; }
   .cert-list { grid-template-columns: repeat(2, 1fr); }
 }
 
