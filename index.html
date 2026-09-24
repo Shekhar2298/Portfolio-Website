@@ -1,198 +1,648 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PORTFOLIO WORLD </title>
-  <link href="./style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chandrashekhar Wadibhasme | DevOps &amp; Full-Stack Engineer</title>
+  <meta name="description" content="Chandrashekhar (Shekhar) Wadibhasme: DevOps and Full-Stack Engineer with 4+ years of experience in AWS, Kubernetes, Docker, Terraform, CI/CD, Java, React and AI/LLM apps. Based in Pune, open to remote.">
+  <meta name="author" content="Chandrashekhar Wadibhasme">
+  <meta name="theme-color" content="#0a0e14">
+  <link rel="canonical" href="https://shekhar2298.github.io/Portfolio-Website/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Shekhar Wadibhasme">
+  <meta property="og:title" content="Chandrashekhar Wadibhasme | DevOps &amp; Full-Stack Engineer">
+  <meta property="og:description" content="I automate the cloud so teams can ship faster. AWS, Kubernetes, Terraform, CI/CD, Java, React and AI apps.">
+  <meta property="og:url" content="https://shekhar2298.github.io/Portfolio-Website/">
+  <meta property="og:image" content="https://shekhar2298.github.io/Portfolio-Website/assets/img/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Chandrashekhar Wadibhasme, DevOps and Full-Stack Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chandrashekhar Wadibhasme | DevOps &amp; Full-Stack Engineer">
+  <meta name="twitter:description" content="I automate the cloud so teams can ship faster. AWS, Kubernetes, Terraform, CI/CD, Java, React and AI apps.">
+  <meta name="twitter:image" content="https://shekhar2298.github.io/Portfolio-Website/assets/img/og-image.jpg">
+
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add("js");
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      }
+      d.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chandrashekhar Wadibhasme",
+    "alternateName": "Shekhar Wadibhasme",
+    "jobTitle": "DevOps & Full-Stack Engineer",
+    "url": "https://shekhar2298.github.io/Portfolio-Website/",
+    "image": "https://shekhar2298.github.io/Portfolio-Website/assets/img/profile.jpg",
+    "email": "mailto:shekharw2298@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+    "worksFor": { "@type": "Organization", "name": "Ingenious Technohub Pvt. Ltd" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sant Gadge Baba Amravati University" },
+    "knowsAbout": ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Jenkins", "GitHub Actions", "CI/CD", "Java", "Spring Boot", "React", "Python", "FastAPI", "LLM applications", "RAG"],
+    "sameAs": ["https://www.linkedin.com/in/shekhar2298/", "https://github.com/Shekhar2298"]
+  }
+  </script>
 </head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 19V5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 7h10v10M7 17 17 7"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+      <symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></symbol>
+      <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+      <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+      <symbol id="i-file-search" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><circle cx="11.5" cy="14.5" r="2.5"/><path d="M13.3 16.3 15 18"/></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+      <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+      <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="m6.5 6.5 11 11M21 21l-1-1M3 3l1 1M18 22l4-4M2 6l4-4M3 10l7-7M14 21l7-7"/></symbol>
+      <symbol id="i-question" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+      <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.58l-.02-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    </defs>
+  </svg>
 
-<body style="background-color: darkolivegreen;">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="container-fluid">
-      <a class="navbar-brand">Projects</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Shekhar Wadibhasme, back to top">
+        <span class="brand-mark" aria-hidden="true">SW</span>
+        <span class="brand-name">Shekhar<span class="brand-dot">.</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon show-dark" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon show-light" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Let's talk</a>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    </div>
-    <form class="nav justify-content-end">
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="position:relative; word-spacing: 50px;">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-          <li class="nav-item ">
-            <a class="nav-link active text-end" aria-current="page" href="About-me.html#abtme">About_me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#topic">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#skill">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#contacts">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#" onclick="document.getElementById('id04').style.display='block'">Cerificates</a>
-            <div id="id04" class="modal">
-              <span onclick="document.getElementById('id04').style.display='none'"
-              class="close" title="Close Modal">&times;</span>
-              
-            <div class="parent container-fluid modal-content animate">
-              <div class="child1 row">
-                    <a class="border border-primary column" href="./Resources/certificate/Bootstrap-Shekhar_ Codecademy.pdf" target="_blank" >Learn-Bootstrap</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Browser-compatibilityShekhar-_ Codecademy.pdf" >Browser-compatibility</a>
-                    <a class="border border-primary column" href="./Resources/certificate/code foundations _shekhar Codecademy.pdf" >code-foundations</a>
-                    </div>
-                    <div class="child2 row">
-                    <a class="border border-primary column" href="./Resources/certificate/CommandLine_Shekhar _ Codecademy.pdf" >CommandLine</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Deploy-website-shekhar_ Codecademy.pdf" >Deploy-website</a>
-                    <a class="border border-primary column" href="./Resources/certificate/GidCSS-cChandrashekhar-codecademy.pdf" >Gid&CSS</a>
-                    </div>
-                    <div class="child3 row">
-                    <a class="border border-primary column" href="./Resources/certificate/Git&Github_Shekhar _ Codecademy.pdf">Git&Github</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Learn HTML_Shekhar.Codecademy.pdf" >Learn-HTML</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Learn-CSS_ ShekhaCodecademy.pdf" >Learn-CSS</a>
-                    </div>
-                    <div class="child4 row">
-                    <a class="border border-primary column" href="./Resources/certificate/Learn-Javascript-Shekhar_ Codecademy.pdf" >Learn-Javascript</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Responsive-Design-Shekhar _ Codecademy.pdf" >Responsive-Design</a>
-                    <a class="border border-primary column" href="./Resources/certificate/Transition-css&animation _Shekhar. Codecademy.pdf" >Transition-css&animation</a>
-             </div>
-                  </div>
-                  <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
-          </li>
-        </ul>
-    </form>
-  </nav>
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="status-pill reveal"><span class="pulse" aria-hidden="true"></span>Open to DevOps, Platform &amp; Cloud roles</span>
+            <p class="hero-kicker reveal" style="--d:60ms">Hi, I'm <strong>Chandrashekhar (Shekhar) Wadibhasme</strong> 👋</p>
+            <h1 class="reveal" style="--d:120ms">I automate the cloud so teams can <span class="gradient-text">ship faster.</span></h1>
+            <p class="hero-lead reveal" style="--d:180ms">I'm a <strong>DevOps &amp; Full-Stack Engineer</strong> with <strong>4+ years</strong> of experience. I set up AWS with <strong>Terraform</strong>, run apps on <strong>Docker and Kubernetes</strong>, and build <strong>CI/CD pipelines</strong> that take code from commit to production on their own. I also write the Java, React and Python code on top, and lately I've been building <strong>AI apps</strong> too.</p>
+            <div class="hero-ctas reveal" style="--d:240ms">
+              <a class="btn btn-primary" href="#projects">See my projects <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+              <a class="btn btn-ghost" href="#contact"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"/></svg> Get in touch</a>
+            </div>
+            <div class="hero-social reveal" style="--d:300ms">
+              <a href="https://www.linkedin.com/in/shekhar2298/" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+              <a href="https://github.com/Shekhar2298" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+              <a href="mailto:shekharw2298@gmail.com"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"/></svg> shekharw2298@gmail.com</a>
+            </div>
+          </div>
 
-  <div id="intro">
-    <div class="container" id="artmsg">
-      <h1 class="text-success"> Software Developer</h1>
-      <h2 class="text=warning" id="txt"> Hello, I'm Chandrashekhar Wadibhasme, focusing on creative frontend and backend
-        Development</h2>
-       
+          <div class="terminal reveal" style="--d:200ms" aria-hidden="true">
+            <div class="terminal-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="terminal-title">shekhar@cloud: ~</span></div>
+            <div class="terminal-body" id="terminal">
+              <div class="t-line"><span class="t-prompt">➜</span> <span class="t-path">~</span> <span class="t-cmd">whoami</span></div>
+              <div class="t-out">Shekhar Wadibhasme · DevOps &amp; Full-Stack Engineer</div>
+              <div class="t-line"><span class="t-prompt">➜</span> <span class="t-path">~</span> <span class="t-cmd">cat stack.txt</span></div>
+              <div class="t-out"><span class="t-muted">cloud </span> AWS · EKS · EC2 · IAM · CloudWatch</div>
+              <div class="t-out"><span class="t-muted">infra </span> Terraform · Ansible · Docker · K8s</div>
+              <div class="t-out"><span class="t-muted">ci/cd </span> Jenkins · GitHub Actions</div>
+              <div class="t-out"><span class="t-muted">code  </span> Java · Spring Boot · React · Python</div>
+              <div class="t-line"><span class="t-prompt">➜</span> <span class="t-path">~</span> <span class="t-cmd">kubectl get pods -n projects</span></div>
+              <div class="t-out"><span class="t-head">NAME            READY   STATUS</span></div>
+              <div class="t-out">ci-cd-pipeline  1/1     <span class="t-run">Running</span></div>
+              <div class="t-out">rag-platform    1/1     <span class="t-run">Running</span></div>
+              <div class="t-out">llm-eval        1/1     <span class="t-run">Running</span></div>
+              <div class="t-out">thinkplay       0/1     <span class="t-muted">Building…</span></div>
+              <div class="t-line"><span class="t-prompt">➜</span> <span class="t-path">~</span> <span class="t-cmd">echo $STATUS</span></div>
+              <div class="t-out t-ok">✔ Open to new opportunities</div>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    <hr><hr>
-    <img id="mainimg" src="Resources\My-Image1.jpg">
- 
-  </div>
-
-<div style="background-color: burlywood;">
-  <div class="container bg-warning" style="margin-top: 50px;" id="topic">
-    <h2>Projects</h2>
-    <h4>click for Github link:-</h4>
-    <ol style="font-size: 20px; text-decoration: none">
-      <li><a class="linksite" href="https://github.com/Shekhar2298/Colmar-Academy-project" target="_blank">Colmar-Academy Project</a>
-      </li>
-      <li><a class="linksite" href="https://github.com/Shekhar2298/Dasmoto-Project" target="_blank">Dasmoto Project</a></li>
-      <li><a class="linksite" href="https://github.com/Shekhar2298/TeaCozy-Project" target="_blank">TeaCozy Project</a></li>
-      <li><a class="linksite" href="https://github.com/Shekhar2298/Tribute-Website-Project" target="_blank">Tribute Pages</a></li>
-      <li><a class="linksite" href="https://github.com/Shekhar2298/Fitness-Website" target="_blank">Fitness Website</a></li>
-    </ol>
-  </div>
-
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img src="Resources\ChandraguptaMaurya.jpg" class="d-block w-100" alt="ChandraguptaMaurya.jpg" id="slideimg">
-        <div class="carousel-caption d-none d-md-block text-danger bg-dark" style="opacity: 0.9;">
-          <h4>Tribute website page</h4>
-          <p>By using HTML,CSS,BOOTSTRAP</p>
-          <a href="https://shekhar2298.github.io/Tribute-Website-Project/" target="_blank">Visit website</a>
+        <div class="stats">
+          <div class="stat reveal"><div class="stat-num">4<span>+</span></div><div class="stat-label">Years building &amp; shipping software</div></div>
+          <div class="stat reveal" style="--d:80ms"><div class="stat-num">60<span>%</span></div><div class="stat-label">Faster deployments delivered</div></div>
+          <div class="stat reveal" style="--d:160ms"><div class="stat-num">100<span>+</span></div><div class="stat-label">Students mentored in full-stack</div></div>
+          <div class="stat reveal" style="--d:240ms"><div class="stat-num">20<span>+</span></div><div class="stat-label">Certifications completed</div></div>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="Resources\colmar.png" class="d-block w-100" alt="colmar.png" id="slideimg">
-        <div class="carousel-caption d-none d-md-block text-danger bg-dark" style="opacity: 0.9;">
-          <h4>colmar project</h4>
-          <p>By using HTML,CSS,BOOTSTRAP</p>
-          <a href="https://shekhar2298.github.io/Colmar-Academy-project/" target="_blank">Visit website</a>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 / About me</p>
+          <h2 class="section-title">I make software easy to ship and easy to run.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="portrait reveal">
+            <img src="assets/img/profile.jpg" width="480" height="480" alt="Portrait of Chandrashekhar Wadibhasme" loading="lazy" decoding="async">
+            <span class="portrait-badge"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Pune, India</span>
+          </div>
+
+          <div class="about-text reveal" style="--d:100ms">
+            <p>I'm a DevOps and Full-Stack Engineer from Maharashtra, India. For the past 4+ years I've worked on every step of getting software to people: writing the backend and frontend code, packing it into containers, and building the cloud setup and pipelines that deliver it.</p>
+            <p>Right now I'm an <strong>AWS DevOps Engineer at Ingenious Technohub</strong>, where I build Jenkins pipelines, deploy Dockerized apps on AWS and set up monitoring. Along the way I've <strong>cut deployment time by 60%</strong>, built self-service Kubernetes platforms for developer teams, and set up Prometheus and Grafana dashboards that help teams spot problems much sooner.</p>
+            <p>I also love teaching. I've mentored <strong>100+ students</strong> in full-stack development. These days I'm also building AI tools, like a document assistant that cites its sources and a system that grades how good an AI's answers are.</p>
+
+            <div class="facts">
+              <div class="fact">
+                <svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>
+                <div><div class="fact-label">Based in</div><div class="fact-value">Pune, Maharashtra, India</div></div>
+              </div>
+              <div class="fact">
+                <svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>
+                <div><div class="fact-label">Looking for</div><div class="fact-value">Senior DevOps, Platform or Cloud Infrastructure roles</div></div>
+              </div>
+              <div class="fact">
+                <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+                <div><div class="fact-label">Work style</div><div class="fact-value">Remote, or on-site in Pune, Bengaluru, Mumbai, Ahmedabad</div></div>
+              </div>
+              <div class="fact">
+                <svg class="icon" aria-hidden="true"><use href="#i-languages"/></svg>
+                <div><div class="fact-label">Languages</div><div class="fact-value">English, Hindi, Marathi</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services">
+          <article class="service reveal" data-tint="devops">
+            <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-infinity"/></svg></div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>I set up AWS infrastructure as code with Terraform and Ansible, run apps on Docker and Kubernetes, and build CI/CD pipelines so every release is quick, safe and repeatable.</p>
+          </article>
+          <article class="service reveal" style="--d:80ms">
+            <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <h3>Full-Stack Development</h3>
+            <p>I build web apps end to end: Java, Spring Boot or Node.js on the backend, React or Next.js on the frontend, and a well-designed SQL database underneath.</p>
+          </article>
+          <article class="service reveal" data-tint="ai" style="--d:160ms">
+            <div class="service-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-bot"/></svg></div>
+            <h3>AI &amp; LLM Apps</h3>
+            <p>I build practical AI tools: chatbots with safety rules, document Q&amp;A that shows its sources, and test systems that check whether an AI's answers are actually right.</p>
+          </article>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="Resources\Dasmoto.jpg" class="d-block w-100" alt="Dasmoto.jpg" id="slideimg">
-        <div class="carousel-caption d-none d-md-block text-danger bg-dark " style="opacity: 0.9;">
-          <h4>Dasmoto project</h4>
-          <p>By using HTML,CSS,BOOTSTRAP</p>
-          <a href="https://shekhar2298.github.io/Dasmoto-Project/" target="_blank">Visit website</a>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 / Experience</p>
+          <h2 class="section-title">Where I've worked</h2>
+          <p class="section-lead">4+ years across DevOps, backend and full-stack roles, plus a stint teaching the next batch of developers.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="job current reveal">
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">AWS DevOps Engineer &amp; Full-Stack Engineer</h3>
+                <p class="job-company">Ingenious Technohub Pvt. Ltd<span class="sep">·</span>Remote</p>
+              </div>
+              <span class="job-meta"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg>Oct 2025 – Present <span class="badge-now">Current</span></span>
+            </div>
+            <ul class="job-points">
+              <li>Build <strong>Jenkins and GitHub Actions pipelines</strong> that test and deploy code automatically, with no manual steps.</li>
+              <li>Deploy <strong>Dockerized apps on AWS EC2</strong> and run workloads on <strong>Kubernetes</strong> across dev, staging and production.</li>
+              <li>Create cloud infrastructure with <strong>Terraform</strong> and lock it down with IAM roles and security groups.</li>
+              <li>Set up <strong>CloudWatch monitoring, logs and alerts</strong> so problems are caught before users notice.</li>
+              <li>Build full-stack features with Java, Spring Boot, React, Next.js and TypeScript, and add AI features into internal tools.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech used">
+              <li class="chip">AWS</li><li class="chip">Jenkins</li><li class="chip">GitHub Actions</li><li class="chip">Docker</li><li class="chip">Kubernetes</li><li class="chip">Terraform</li><li class="chip">CloudWatch</li><li class="chip">Spring Boot</li><li class="chip">React</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Full Stack Trainer</h3>
+                <p class="job-company">IANT (Institute of Advance Network Technology)<span class="sep">·</span>Pune</p>
+              </div>
+              <span class="job-meta"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg>Sep 2024 – Feb 2025</span>
+            </div>
+            <ul class="job-points">
+              <li>Mentored <strong>100+ students</strong> in full-stack development with Java, React, MongoDB and SQL.</li>
+              <li>Designed hands-on lessons for Java, Spring Boot, React, Node.js, Bootstrap and REST APIs.</li>
+              <li>Reached <strong>95% student satisfaction</strong> and helped raise placement success by <strong>40%</strong>.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech used">
+              <li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">React</li><li class="chip">Node.js</li><li class="chip">MongoDB</li><li class="chip">SQL</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Software Engineer</h3>
+                <p class="job-company">Neogen Softech Solutions<span class="sep">·</span>Remote</p>
+              </div>
+              <span class="job-meta"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg>Apr 2023 – Jul 2024</span>
+            </div>
+            <ul class="job-points">
+              <li>Built backend services and microservices with <strong>Java, Spring Boot</strong>, JPA/Hibernate, PostgreSQL and MySQL.</li>
+              <li>Built secure REST APIs and login and permission systems, and connected internal systems so they could share data.</li>
+              <li>Tuned performance and <strong>cut application load times by 30%</strong>.</li>
+              <li>Worked with the DevOps team to automate deployments, and took part in code reviews and JUnit testing.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech used">
+              <li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">Hibernate</li><li class="chip">PostgreSQL</li><li class="chip">MySQL</li><li class="chip">REST APIs</li><li class="chip">JUnit</li>
+            </ul>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3 class="job-role">Associate Software Engineer</h3>
+                <p class="job-company">T &amp; T Infra Limited</p>
+              </div>
+              <span class="job-meta"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg>Jan 2021 – Mar 2023</span>
+            </div>
+            <ul class="job-points">
+              <li>Built and supported backend applications and REST APIs used in day-to-day business work.</li>
+              <li>Helped with AWS deployments, monitoring and release automation.</li>
+              <li>Fixed production issues with senior engineers and handled application support.</li>
+              <li>Took on <strong>Security Solutions Architect</strong> duties (Oct 2021 – Jan 2022), advising on secure AWS setups.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech used">
+              <li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">SQL</li><li class="chip">AWS</li><li class="chip">REST APIs</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="edu-title reveal"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>Education</h3>
+        <div class="edu-card reveal">
+          <div>
+            <h4>Bachelor of Engineering</h4>
+            <p>Sant Gadge Baba Amravati University, Amravati</p>
+          </div>
+          <div class="edu-side"><span class="chip core">GPA 8.30 / 10</span><span class="chip">Aug 2016 – Nov 2020</span></div>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="Resources\Tcozy.jpeg" class="d-block w-100" alt="Tcozy.jpg" id="slideimg">
-        <div class="carousel-caption d-none d-md-block text-danger bg-dark" style="opacity: 0.9;">
-          <h4>Tcozy project</h4>
-          <p>By using HTML,CSS,BOOTSTRAP</p>
-          <a href="https://shekhar2298.github.io/TeaCozy-Project/" target="_blank">Visit website</a>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 / Projects</p>
+          <h2 class="section-title">Things I've built</h2>
+          <p class="section-lead">Each project in a few simple lines: what it does and what I used to build it. Pick a category to filter.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All <span class="count">10</span></button>
+          <button class="filter" type="button" data-filter="devops" aria-pressed="false">Cloud &amp; DevOps <span class="count">3</span></button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI &amp; LLM <span class="count">3</span></button>
+          <button class="filter" type="button" data-filter="fullstack" aria-pressed="false">Full-Stack <span class="count">2</span></button>
+          <button class="filter" type="button" data-filter="research" aria-pressed="false">Research <span class="count">2</span></button>
+        </div>
+
+        <div class="projects">
+          <!-- Cloud & DevOps -->
+          <article class="project reveal" data-cat="devops">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-activity"/></svg></span>
+              <span class="project-cat">Cloud &amp; DevOps</span>
+            </div>
+            <h3>Vehicle Telemetry Platform</h3>
+            <p>A system that collects live data from vehicles (simulated) in real time. I built the AWS setup with Terraform, ran the services on Kubernetes (Amazon EKS), automated releases with CI/CD, and added Grafana dashboards to watch it all live.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">AWS EKS</li><li class="chip">Terraform</li><li class="chip">Kubernetes</li><li class="chip">CI/CD</li><li class="chip">Prometheus</li><li class="chip">Grafana</li></ul>
+            <div class="project-links"><span class="private"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-lock"/></svg>Private project, details on request</span></div>
+          </article>
+
+          <article class="project reveal" data-cat="devops" style="--d:80ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-merge"/></svg></span>
+              <span class="project-cat">Cloud &amp; DevOps</span>
+            </div>
+            <h3>Automatic Deploy Pipeline (CI/CD)</h3>
+            <p>Push code to GitHub and it goes live by itself. Jenkins builds the app, Ansible deploys it, and Docker runs it on Tomcat, spread across three separate servers. No manual steps at all.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Jenkins</li><li class="chip">Ansible</li><li class="chip">Docker</li><li class="chip">Tomcat</li><li class="chip">GitHub</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/Devops-Project" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <article class="project reveal" data-cat="devops" style="--d:160ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-network"/></svg></span>
+              <span class="project-cat">Cloud &amp; DevOps</span>
+            </div>
+            <h3>AWS Network Setup with Ansible</h3>
+            <p>Builds a complete, production-style AWS network from code: a private VPC, public and private subnets, routing, and servers that can only be reached safely through a bastion host.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Ansible</li><li class="chip">AWS VPC</li><li class="chip">EC2</li><li class="chip">Infrastructure as Code</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/ansible-aws-vpc" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <!-- AI & LLM -->
+          <article class="project reveal" data-cat="ai">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-file-search"/></svg></span>
+              <span class="project-cat">AI &amp; LLM</span>
+            </div>
+            <h3>Ask-Your-Documents Assistant (RAG)</h3>
+            <p>Add your documents and ask questions in plain English. It finds the right passages and answers with citations, so you can see exactly where each answer came from.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">RAG</li><li class="chip">Docker</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/RAG-Document-Intelligence-Platform" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <article class="project reveal" data-cat="ai" style="--d:80ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-gauge"/></svg></span>
+              <span class="project-cat">AI &amp; LLM</span>
+            </div>
+            <h3>LLM Evaluation Platform</h3>
+            <p>A report card for AI apps. It runs an AI through a set of test questions, scores every answer for relevance, accuracy, length and safety, and produces a clear report.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">OpenAI API</li><li class="chip">Docker</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/LLM-Evaluation-Platform" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <article class="project reveal" data-cat="ai" style="--d:160ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-heart-pulse"/></svg></span>
+              <span class="project-cat">AI &amp; LLM</span>
+            </div>
+            <h3>Safety-First Healthcare Chatbot</h3>
+            <p>A health chatbot built with safety first. It answers general health questions but refuses to diagnose, prescribe or calculate doses, and it flags emergency messages right away.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">OpenAI API</li><li class="chip">Docker</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/LLM-Integration-Healthcare-Chatbot" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <!-- Full-Stack -->
+          <article class="project reveal" data-cat="fullstack">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-zap"/></svg></span>
+              <span class="project-cat">Full-Stack</span>
+            </div>
+            <h3>ThinkPlay <span class="tag-wip">In development</span></h3>
+            <p>A live quiz app where everyone answers at the same time and sees results instantly. It has secure logins with different user roles, a web backend, and an Android app, all hosted on AWS.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Node.js</li><li class="chip">PostgreSQL</li><li class="chip">WebSockets</li><li class="chip">Kafka</li><li class="chip">Flutter</li><li class="chip">AWS</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/ThinkPlay" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+          </article>
+
+          <article class="project reveal" data-cat="fullstack" style="--d:80ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-dumbbell"/></svg></span>
+              <span class="project-cat">Full-Stack</span>
+            </div>
+            <h3>FIT FACTORY</h3>
+            <p>A fitness website about yoga, meditation and healthy eating, built around one simple idea: 80% diet, 20% exercise. Made with Spring Boot and Thymeleaf, with a SQL database behind it.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">Thymeleaf</li><li class="chip">Bootstrap</li><li class="chip">SQL</li></ul>
+            <div class="project-links">
+              <a href="https://shekhar2298.github.io/Fitness-Website/" target="_blank" rel="noopener"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-globe"/></svg>Live demo</a>
+              <a href="https://github.com/Shekhar2298/FitnessWebsite-MVCProject" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+            </div>
+          </article>
+
+          <!-- Research -->
+          <article class="project reveal" data-cat="research" style="--d:160ms">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-question"/></svg></span>
+              <span class="project-cat">Research</span>
+            </div>
+            <h3>The Linguistic Blindspot</h3>
+            <p>Research on where AI chatbots get confused. I wrote 150 tricky riddles full of negatives and wordplay, then tracked where top AI models give confident answers that are actually wrong.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">LLM Evaluation</li><li class="chip">Dataset Design</li><li class="chip">Prompt Design</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/linguistic-blindspot" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code &amp; paper</a></div>
+          </article>
+
+          <article class="project reveal" data-cat="research">
+            <div class="project-top">
+              <span class="project-icon"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-atom"/></svg></span>
+              <span class="project-cat">Research</span>
+            </div>
+            <h3>Preventing Tunneling in Game Physics</h3>
+            <p>In games, very fast objects can slip straight through walls between frames. This project uses simple matrix math to catch those hits, so 2D physics stays accurate without slowing down.</p>
+            <ul class="chips" aria-label="Tech used"><li class="chip">Python</li><li class="chip">Vector Math</li><li class="chip">2D Physics</li></ul>
+            <div class="project-links"><a href="https://github.com/Shekhar2298/preventing-tunneling" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Code &amp; paper</a></div>
+          </article>
+
+          <a class="project-cta reveal" href="https://github.com/Shekhar2298?tab=repositories" target="_blank" rel="noopener" style="--d:80ms">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>
+            <div>
+              <h3>There's more on GitHub</h3>
+              <p>A URL shortener in Java, an e-commerce clone, a PDF converter, an Android app, a SonarQube code-quality setup and other experiments.</p>
+            </div>
+            <span class="project-cta-link">Browse all repositories<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></span>
+          </a>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="Resources/FIT FACTORY - .png" class="d-block w-100" alt="Tcozy.jpg" id="slideimg">
-        <div class="carousel-caption d-none d-md-block text-danger bg-dark" style="opacity: 0.9;">
-          <h4>Fitness website project</h4>
-          <p>By using HTML,CSS,BOOTSTRAP,JAVASCRIPT</p>
-          <a href="https://shekhar2298.github.io/Fitness-Website/" target="_blank">Visit website</a>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 / Skills</p>
+          <h2 class="section-title">My toolbox</h2>
+          <p class="section-lead">The tools I use to build, ship and run software. Highlighted ones are the ones I use most.</p>
+        </div>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg></span>Cloud</h3>
+            <p>Where my apps live and scale.</p>
+            <ul class="chips"><li class="chip core">AWS</li><li class="chip core">EC2</li><li class="chip core">EKS</li><li class="chip">ECS</li><li class="chip">S3</li><li class="chip">Lambda</li><li class="chip core">IAM</li><li class="chip">VPC</li><li class="chip">RDS</li><li class="chip">Route 53</li><li class="chip">API Gateway</li><li class="chip">Azure</li><li class="chip">GCP</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:80ms">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-infinity"/></svg></span>DevOps &amp; Automation</h3>
+            <p>Build, test, deploy and watch, automatically.</p>
+            <ul class="chips"><li class="chip core">Terraform</li><li class="chip core">Docker</li><li class="chip core">Kubernetes</li><li class="chip core">Jenkins</li><li class="chip core">GitHub Actions</li><li class="chip">Ansible</li><li class="chip">CloudFormation</li><li class="chip">Prometheus</li><li class="chip">Grafana</li><li class="chip">CloudWatch</li><li class="chip">Linux</li><li class="chip">Git</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:160ms">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>Backend</h3>
+            <p>APIs and services that do the heavy lifting.</p>
+            <ul class="chips"><li class="chip core">Java</li><li class="chip core">Spring Boot</li><li class="chip">Spring Security</li><li class="chip">JPA / Hibernate</li><li class="chip core">Python</li><li class="chip">FastAPI</li><li class="chip">Node.js</li><li class="chip core">REST APIs</li><li class="chip">Microservices</li><li class="chip">Kafka</li><li class="chip">OAuth2</li><li class="chip">JUnit</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>Frontend &amp; Mobile</h3>
+            <p>Clean, responsive screens people enjoy using.</p>
+            <ul class="chips"><li class="chip core">React</li><li class="chip">Next.js</li><li class="chip">TypeScript</li><li class="chip core">JavaScript</li><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Bootstrap</li><li class="chip">Thymeleaf</li><li class="chip">Flutter</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:80ms">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>Databases</h3>
+            <p>Storing data safely and finding it fast.</p>
+            <ul class="chips"><li class="chip core">PostgreSQL</li><li class="chip core">MySQL</li><li class="chip">MongoDB</li><li class="chip">DynamoDB</li><li class="chip">Database design</li><li class="chip">Indexing &amp; query tuning</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:160ms">
+            <h3><span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-bot"/></svg></span>AI &amp; LLM</h3>
+            <p>Making AI useful, and making sure it's right.</p>
+            <ul class="chips"><li class="chip core">LLM integration</li><li class="chip core">RAG</li><li class="chip">Prompt engineering</li><li class="chip">LLM evaluation</li><li class="chip">Agentic AI</li><li class="chip">OpenAI API</li><li class="chip">AI safety rules</li></ul>
+          </article>
+        </div>
+        <p class="skills-legend reveal"><span class="chip core">Highlighted</span> = what I use most</p>
+      </div>
+    </section>
+
+    <!-- ============ Certifications ============ -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 / Certifications</p>
+          <h2 class="section-title">Always learning</h2>
+          <p class="section-lead">Courses I've completed to keep my skills sharp. Click any linked one to see the original certificate.</p>
+        </div>
+
+        <div class="cert-featured">
+          <article class="cert reveal">
+            <span class="cert-logo dl" aria-hidden="true">DL</span>
+            <h3>Agentic AI</h3>
+            <p class="cert-issuer">DeepLearning.AI · May 2026</p>
+            <p class="cert-id">ID 9a05eb73-6eb0-40df-8c4c-0ab81edaebff</p>
+            <a class="verify" href="https://learn.deeplearning.ai/certificates/9a05eb73-6eb0-40df-8c4c-0ab81edaebff" target="_blank" rel="noopener">Verify certificate<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </article>
+          <article class="cert reveal" style="--d:80ms">
+            <span class="cert-logo ibm" aria-hidden="true">IBM</span>
+            <h3>Building Cloud Native and Multicloud Applications</h3>
+            <p class="cert-issuer">IBM Developer Skills Network · Feb 2026</p>
+            <p class="cert-id">ID ca13a90a0aa542de9c4f3ed58a1899eb</p>
+            <a class="verify" href="https://courses.cognitiveclass.ai/certificates/ca13a90a0aa542de9c4f3ed58a1899eb" target="_blank" rel="noopener">Verify certificate<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </article>
+          <article class="cert reveal" style="--d:160ms">
+            <span class="cert-logo ibm" aria-hidden="true">IBM</span>
+            <h3>Introduction to Cloud</h3>
+            <p class="cert-issuer">IBM Developer Skills Network · Feb 2026</p>
+            <p class="cert-id">ID bc92911ae54f47a0bf27f9b9a0660332</p>
+            <a class="verify" href="https://courses.cognitiveclass.ai/certificates/bc92911ae54f47a0bf27f9b9a0660332" target="_blank" rel="noopener">Verify certificate<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </article>
+          <article class="cert reveal" style="--d:240ms">
+            <span class="cert-logo ibm" aria-hidden="true">IBM</span>
+            <h3>Docker Essentials: A Developer Introduction</h3>
+            <p class="cert-issuer">IBM Developer Skills Network · Feb 2026</p>
+            <p class="cert-id">ID da6796f48ae647f8bb36b2e2aef0c6f3</p>
+            <a class="verify" href="https://courses.cognitiveclass.ai/certificates/da6796f48ae647f8bb36b2e2aef0c6f3" target="_blank" rel="noopener">Verify certificate<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </article>
+        </div>
+
+        <div class="cert-more reveal">
+          <div class="cert-more-head">
+            <h3><span class="cert-logo cc" aria-hidden="true">CC</span>Codecademy · 17 courses &amp; skill paths</h3>
+            <a href="https://www.linkedin.com/in/shekhar2298/details/certifications/" target="_blank" rel="noopener">See all on LinkedIn<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </div>
+          <ul class="cert-list">
+            <li><span>Learn Java</span><span class="meta">Jul 2023</span></li>
+            <li><span>Learn React</span><span class="meta">Jun 2023</span></li>
+            <li><span>Learn Intermediate JavaScript</span><span class="meta">Jun 2023</span></li>
+            <li><span>Building Interactive JavaScript Websites</span><span class="meta">Jun 2023</span></li>
+            <li><span>Learn SQL</span><span class="meta">Jun 2023</span></li>
+            <li><span>Learn JavaScript</span><a href="Resources/certificate/Learn-Javascript-Shekhar_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn JavaScript certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Build a Website with HTML, CSS &amp; GitHub Pages</span><a href="Resources/certificate/Deploy-website-shekhar_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Build a Website with HTML, CSS and GitHub Pages certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn Bootstrap</span><a href="Resources/certificate/Bootstrap-Shekhar_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn Bootstrap certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn CSS: Browser Compatibility</span><a href="Resources/certificate/Browser-compatibilityShekhar-_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn CSS: Browser Compatibility certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn CSS: Responsive Design</span><a href="Resources/certificate/Responsive-Design-Shekhar%20_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn CSS: Responsive Design certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn CSS: Flexbox and Grid</span><a href="Resources/certificate/GidCSS-cChandrashekhar-codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn CSS: Flexbox and Grid certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn CSS: Transitions and Animations</span><a href="Resources/certificate/Transition-css%26animation%20_Shekhar.%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn CSS: Transitions and Animations certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn CSS</span><a href="Resources/certificate/Learn-CSS_%20ShekhaCodecademy.pdf" target="_blank" rel="noopener" aria-label="Learn CSS certificate, May 2023 (PDF)">May 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn HTML</span><a href="Resources/certificate/Learn%20HTML_Shekhar.Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn HTML certificate, April 2023 (PDF)">Apr 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn Git &amp; GitHub</span><a href="Resources/certificate/Git%26Github_Shekhar%20_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn Git and GitHub certificate, April 2023 (PDF)">Apr 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Learn the Command Line</span><a href="Resources/certificate/CommandLine_Shekhar%20_%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Learn the Command Line certificate, April 2023 (PDF)">Apr 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+            <li><span>Code Foundations (Skill Path)</span><a href="Resources/certificate/code%20foundations%20_shekhar%20Codecademy.pdf" target="_blank" rel="noopener" aria-label="Code Foundations skill path certificate, April 2023 (PDF)">Apr 2023<svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg></a></li>
+          </ul>
         </div>
       </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="eyebrow">06 / Contact</div>
+          <h2>Let's work together</h2>
+          <p>I'm open to Senior DevOps, Platform Engineer and Cloud Infrastructure roles in Pune, Bengaluru, Mumbai, Ahmedabad or remote, at product companies or funded startups. I also take on international and freelance projects. The quickest way to reach me is email or LinkedIn.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:shekharw2298@gmail.com"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/shekhar2298/" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/Shekhar2298" target="_blank" rel="noopener"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          </div>
+          <div class="email-row">
+            <span>shekharw2298@gmail.com</span>
+            <button class="copy-btn" type="button" data-copy="shekharw2298@gmail.com" aria-label="Copy email address">
+              <svg class="icon icon-sm i-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+              <svg class="icon icon-sm i-check" aria-hidden="true"><use href="#i-check"/></svg>
+              <span class="copy-label" aria-live="polite">Copy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Chandrashekhar Wadibhasme · Built with plain HTML, CSS &amp; JavaScript</p>
+      <div class="footer-links">
+        <a href="mailto:shekharw2298@gmail.com" aria-label="Email"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"/></svg></a>
+        <a href="https://www.linkedin.com/in/shekhar2298/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/Shekhar2298" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon icon-sm icon-fill" aria-hidden="true"><use href="#i-github"/></svg></a>
+      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
-<hr>
-<div style="background-color:darkgrey;" >
-  <div class="container text-center" style="margin-top: 50px;position: relative; " id="skill">
-    <h2>Skills</h2>
-    <div class="container justify-content-center" style="height: 100px;width: 100px; display: inline-flex;border-radius: 20px;" id="skillimg">
+  </footer>
 
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
 
-      <img src="Resources\htmllogo.png">
-      <img src="Resources\csslogo.png">
-      <img src="Resources\jslogo.png">
-      <img src="Resources\gitlogo.png">
-      <img src="Resources\githublogo.png">
-      <img src="Resources\nodelogo.png">
-      <img src="Resources/phplogo.png">
-    </div>
-
-  </div>
-</div>
-<hr>
-
-  <div class="container text-center " style="margin-top: 50px; background-color: darkseagreen; max-width: 100%;" id="contacts">
-    <h2>
-      Contact
-    </h2>
-    <div class="container-fluid justify-content-center" id="contactimg">
-      <a href="https://www.linkedin.com/in/shekhar2298/" target="_blank"><img class="img4"
-          src="Resources\linkedinlogo.png"></a>
-      <a href="https://www.github.com/Shekhar2298" target="_blank"><img class="img4" src="Resources\githublogo.png"></a>
-      <a href="https://mail.google.com/mail/u/0/#inbox?compose=shekharw2298@gmail.com" target="_blank"><img class="img4" src="Resources\Maillogo.png"></a>
-      
-    </div>
-    </div>
-  </div>
-
-
- 
-
-
-
-
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-  <script src="./index.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
